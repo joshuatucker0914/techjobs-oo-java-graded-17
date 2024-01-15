@@ -17,6 +17,7 @@ public class Job {
     // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
+
     // Constructor to initialize the id field with a unique value.
     public Job() {
         id = nextId;
@@ -30,6 +31,21 @@ public class Job {
         this.location = location;
         this.positionType = positionType;
         this.coreCompetency = coreCompetency;
+    }
+
+    public static void resetNextId() {
+        nextId = 1;
+    }
+
+    @Override
+    public String toString() {
+        return "\nID: " + id +
+                "\nName: " + (name != null && !name.isEmpty() ? name : "Data not available") +
+                "\nEmployer: " + (employer != null && employer.getValue() != null && !employer.getValue().isEmpty() ? employer.getValue() : "Data not available") +
+                "\nLocation: " + (location != null && location.getValue() != null && !location.getValue().isEmpty() ? location.getValue() : "Data not available") +
+                "\nPosition Type: " + (positionType != null && positionType.getValue() != null && !positionType.getValue().isEmpty() ? positionType.getValue() : "Data not available") +
+                "\nCore Competency: " + (coreCompetency != null && coreCompetency.getValue() != null && !coreCompetency.getValue().isEmpty() ? coreCompetency.getValue() : "Data not available") +
+                "\n";
     }
 
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
