@@ -8,12 +8,6 @@ public class Location extends JobField {
         super(value);
     }
 
-    // TODO: Add a constructor that takes a string as a parameter and assigns it to the 'value' field. The
-    //  constructor should also call the empty constructor in order to initialize the 'id' field.
-
-
-    // Second constructor that calls the first constructor to initialize the 'id' field.
-    // It also initializes the 'value' field for a new Location object.
     public Location(int id, String value) {
         super(value); // Calling the super constructor to initialize the 'id' and 'value' fields.
     }

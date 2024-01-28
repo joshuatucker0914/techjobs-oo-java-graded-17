@@ -6,14 +6,4 @@ public class PositionType extends JobField {
     public PositionType(String value) {
         super(value);
     }
-
-    // TODO: Add a custom toString() method that returns the data stored in 'value'.
-
-    // Custom toString method that returns the data stored in 'value'.
-
-    // TODO: Add custom equals and hashCode methods. Consider two PositionType objects "equal" when
-    //  their id fields match.
-
-    // Custom equals and hashCode methods. Assumes two PositionType objects are equal when their id fields match.
-
 }
